@@ -1,1 +1,91 @@
+<svg width="100%" viewBox="0 0 800 140" xmlns="http://www.w3.org/2000/svg">
 
+  <!-- sombra -->
+  <ellipse cx="0" cy="115" rx="35" ry="8" fill="rgba(0,0,0,0.2)">
+    <animate attributeName="cx" from="-60" to="860" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="30;35;30" dur="0.6s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g>
+    <!-- movimento horizontal com easing -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="-60 0; 200 0; 400 0; 600 0; 860 0"
+      keyTimes="0; 0.25; 0.5; 0.75; 1"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+
+    <!-- leve bounce vertical -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      additive="sum"
+      values="0 0; 0 -3; 0 0"
+      dur="0.4s"
+      repeatCount="indefinite"
+    />
+
+    <!-- corpo -->
+    <ellipse cx="22" cy="70" rx="20" ry="28" fill="#111"/>
+    <ellipse cx="22" cy="75" rx="13" ry="20" fill="#f5f5f5"/>
+
+    <!-- cabeça -->
+    <ellipse cx="22" cy="38" rx="17" ry="18" fill="#111"/>
+    <ellipse cx="22" cy="42" rx="11" ry="12" fill="#f5f5f5"/>
+
+    <!-- olhos -->
+    <circle cx="16" cy="35" r="4" fill="#fff"/>
+    <circle cx="28" cy="35" r="4" fill="#fff"/>
+    <circle cx="17" cy="35" r="2" fill="#000"/>
+    <circle cx="29" cy="35" r="2" fill="#000"/>
+
+    <!-- bico -->
+    <ellipse cx="22" cy="45" rx="6" ry="3.5" fill="#F4A020"/>
+
+    <!-- pé esquerdo -->
+    <ellipse cx="12" cy="102" rx="10" ry="5" fill="#F4A020">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="15 12 102; -20 12 102; 15 12 102"
+        dur="0.5s"
+        repeatCount="indefinite"
+      />
+    </ellipse>
+
+    <!-- pé direito -->
+    <ellipse cx="32" cy="102" rx="10" ry="5" fill="#F4A020">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-15 32 102; 20 32 102; -15 32 102"
+        dur="0.5s"
+        repeatCount="indefinite"
+      />
+    </ellipse>
+
+    <!-- asas -->
+    <ellipse cx="4" cy="70" rx="6" ry="15" fill="#000">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-10 4 70; 10 4 70; -10 4 70"
+        dur="0.5s"
+        repeatCount="indefinite"
+      />
+    </ellipse>
+
+    <ellipse cx="40" cy="70" rx="6" ry="15" fill="#000">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="10 40 70; -10 40 70; 10 40 70"
+        dur="0.5s"
+        repeatCount="indefinite"
+      />
+    </ellipse>
+
+  </g>
+</svg>
