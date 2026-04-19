@@ -1,4 +1,4 @@
-<svg width="100%" viewBox="0 0 800 300" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 800 90" overflow="visible" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <radialGradient id="gb" cx="32%" cy="28%" r="70%">
     <stop offset="0%" stop-color="#2e2e2e"/>
@@ -13,86 +13,88 @@
     <stop offset="0%" stop-color="#ffffff"/>
     <stop offset="100%" stop-color="#cccccc"/>
   </radialGradient>
-  <radialGradient id="ghead" cx="28%" cy="22%" r="72%">
+  <radialGradient id="gh" cx="28%" cy="22%" r="72%">
     <stop offset="0%" stop-color="#2a2a2a"/>
     <stop offset="100%" stop-color="#050505"/>
   </radialGradient>
 </defs>
 
-<!-- Ground shadow -->
-<ellipse cx="0" cy="265" rx="28" ry="6" fill="rgba(0,0,0,0.18)">
+<!-- SHADOW -->
+<ellipse cx="0" cy="86" rx="12" ry="3.5" fill="rgba(0,0,0,0.15)">
   <animateTransform attributeName="transform" type="translate"
-    values="-60,0;120,0;340,0;560,0;860,0;560,0;340,0;120,0;-60,0"
-    keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875;1"
-    dur="13s" repeatCount="indefinite" calcMode="spline"
-    keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
-  <animate attributeName="rx" values="26;32;26" dur="0.47s" repeatCount="indefinite"/>
-  <animate attributeName="ry" values="6;4;6" dur="0.47s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.18;0.1;0.18" dur="0.47s" repeatCount="indefinite"/>
+    values="-40,0; 160,0; 220,0; 500,0; 560,0; 840,0; 840,0; 560,0; 500,0; 220,0; 160,0; -40,0"
+    keyTimes="0;0.09;0.12;0.38;0.41;0.5;0.5;0.59;0.62;0.88;0.91;1"
+    dur="18s" repeatCount="indefinite" calcMode="spline"
+    keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 
-<!-- Tux — 2D wave path -->
+<!-- TUX -->
 <g>
   <animateTransform attributeName="transform" type="translate"
-    values="-60,258;120,155;340,260;560,148;860,258;560,148;340,260;120,155;-60,258"
-    keyTimes="0;0.125;0.25;0.375;0.5;0.625;0.75;0.875;1"
-    dur="13s" repeatCount="indefinite" calcMode="spline"
-    keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1"/>
+    values="-40,74; 160,74; 220,74; 500,74; 560,74; 840,74; 840,74; 560,74; 500,74; 220,74; 160,74; -40,74"
+    keyTimes="0;0.09;0.12;0.38;0.41;0.5;0.5;0.59;0.62;0.88;0.91;1"
+    dur="18s" repeatCount="indefinite" calcMode="spline"
+    keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
 
-  <!-- Vertical bob -->
   <g>
-    <animateTransform attributeName="transform" type="translate"
-      values="0,0;0,-9;0,0" dur="0.47s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale"
+      values="1,1;1,1;1,1;1,1;1,1;1,1;-1,1;-1,1;-1,1;-1,1;-1,1;-1,1"
+      keyTimes="0;0.09;0.12;0.38;0.41;0.5;0.5;0.59;0.62;0.88;0.91;1"
+      dur="18s" repeatCount="indefinite" calcMode="discrete"/>
 
-    <!-- LEFT FOOT -->
-    <ellipse cx="-13" cy="3" rx="18" ry="6" fill="#F4A020">
-      <animateTransform attributeName="transform" type="rotate"
-        values="30,-13,3;-36,-13,3;30,-13,3" dur="0.47s" repeatCount="indefinite"/>
-    </ellipse>
-    <!-- RIGHT FOOT -->
-    <ellipse cx="13" cy="3" rx="18" ry="6" fill="#F4A020">
-      <animateTransform attributeName="transform" type="rotate"
-        values="-30,13,3;36,13,3;-30,13,3" dur="0.47s" repeatCount="indefinite"/>
-    </ellipse>
+    <!-- BOB -->
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0;0,-5;0,0" dur="0.42s" repeatCount="indefinite"/>
 
-    <!-- BODY -->
-    <ellipse cx="0" cy="-56" rx="28" ry="47" fill="url(#gb)"/>
-    <!-- BELLY -->
-    <ellipse cx="0" cy="-54" rx="18" ry="34" fill="url(#gw)"/>
+      <!-- PÉ ESQUERDO -->
+      <ellipse cx="-10" cy="2" rx="9" ry="3.5" fill="#F4A020">
+        <animateTransform attributeName="transform" type="rotate"
+          values="32,-10,2;-38,-10,2;32,-10,2" dur="0.42s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- PÉ DIREITO -->
+      <ellipse cx="10" cy="2" rx="9" ry="3.5" fill="#F4A020">
+        <animateTransform attributeName="transform" type="rotate"
+          values="-32,10,2;38,10,2;-32,10,2" dur="0.42s" repeatCount="indefinite"/>
+      </ellipse>
 
-    <!-- LEFT WING -->
-    <ellipse cx="-28" cy="-56" rx="11" ry="25" fill="#0b0b0b">
-      <animateTransform attributeName="transform" type="rotate"
-        values="-8,-28,-56;24,-28,-56;-8,-28,-56" dur="0.47s" repeatCount="indefinite"/>
-    </ellipse>
-    <!-- RIGHT WING -->
-    <ellipse cx="28" cy="-56" rx="11" ry="25" fill="#0b0b0b">
-      <animateTransform attributeName="transform" type="rotate"
-        values="8,28,-56;-24,28,-56;8,28,-56" dur="0.47s" repeatCount="indefinite"/>
-    </ellipse>
+      <!-- CORPO -->
+      <ellipse cx="0" cy="-32" rx="14" ry="21" fill="url(#gb)"/>
+      <!-- BARRIGA -->
+      <ellipse cx="0" cy="-31" rx="8.5" ry="15" fill="url(#gw)"/>
 
-    <!-- HEAD -->
-    <circle cx="0" cy="-109" r="26" fill="url(#ghead)"/>
-    <!-- FACE PATCH -->
-    <ellipse cx="0" cy="-106" rx="17" ry="20" fill="url(#gw)"/>
+      <!-- ASA ESQUERDA -->
+      <ellipse cx="-14" cy="-32" rx="5.5" ry="12" fill="#0b0b0b">
+        <animateTransform attributeName="transform" type="rotate"
+          values="-10,-14,-32;22,-14,-32;-10,-14,-32" dur="0.42s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- ASA DIREITA -->
+      <ellipse cx="14" cy="-32" rx="5.5" ry="12" fill="#0b0b0b">
+        <animateTransform attributeName="transform" type="rotate"
+          values="10,14,-32;-22,14,-32;10,14,-32" dur="0.42s" repeatCount="indefinite"/>
+      </ellipse>
 
-    <!-- EYES -->
-    <circle cx="-11" cy="-114" r="8" fill="url(#ge)"/>
-    <circle cx="11" cy="-114" r="8" fill="url(#ge)"/>
-    <circle cx="-10" cy="-114" r="4" fill="#0e0e0e"/>
-    <circle cx="12" cy="-114" r="4" fill="#0e0e0e"/>
-    <circle cx="-12.5" cy="-117" r="2.2" fill="white" opacity="0.92"/>
-    <circle cx="9.5" cy="-117" r="2.2" fill="white" opacity="0.92"/>
-    <circle cx="-9" cy="-112" r="1" fill="white" opacity="0.5"/>
-    <circle cx="13.5" cy="-112" r="1" fill="white" opacity="0.5"/>
+      <!-- CABEÇA -->
+      <circle cx="0" cy="-62" r="14" fill="url(#gh)"/>
+      <!-- MANCHA FACIAL -->
+      <ellipse cx="0" cy="-60" rx="9" ry="11" fill="url(#gw)"/>
 
-    <!-- BEAK -->
-    <path d="M-9,-95 Q0,-89 9,-95 Q4,-85 0,-83 Q-4,-85 -9,-95Z" fill="#F4A020"/>
-    <path d="M-9,-95 Q0,-90 9,-95" stroke="#c47e0c" stroke-width="1.2" fill="none"/>
+      <!-- OLHOS -->
+      <circle cx="-5.5" cy="-64" r="4" fill="url(#ge)"/>
+      <circle cx="5.5" cy="-64" r="4" fill="url(#ge)"/>
+      <circle cx="-5" cy="-64" r="2" fill="#0e0e0e"/>
+      <circle cx="6" cy="-64" r="2" fill="#0e0e0e"/>
+      <circle cx="-6.5" cy="-65.5" r="1" fill="white" opacity="0.9"/>
+      <circle cx="4.5" cy="-65.5" r="1" fill="white" opacity="0.9"/>
 
-    <!-- BLUSH -->
-    <ellipse cx="-18" cy="-107" rx="6" ry="4" fill="rgba(255,95,85,0.28)"/>
-    <ellipse cx="18" cy="-107" rx="6" ry="4" fill="rgba(255,95,85,0.28)"/>
+      <!-- BICO -->
+      <path d="M-4.5,-53 Q0,-49 4.5,-53 Q2,-47 0,-46 Q-2,-47 -4.5,-53Z" fill="#F4A020"/>
+      <path d="M-4.5,-53 Q0,-50 4.5,-53" stroke="#c47e0c" stroke-width="0.7" fill="none"/>
+
+      <!-- BLUSH -->
+      <ellipse cx="-9" cy="-61" rx="3" ry="2" fill="rgba(255,95,85,0.28)"/>
+      <ellipse cx="9" cy="-61" rx="3" ry="2" fill="rgba(255,95,85,0.28)"/>
+    </g>
   </g>
 </g>
 </svg>
