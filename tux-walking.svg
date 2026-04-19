@@ -1,4 +1,4 @@
-<svg width="100%" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1200 2000" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <radialGradient id="gb" cx="32%" cy="28%" r="70%"><stop offset="0%" stop-color="#2e2e2e"/><stop offset="100%" stop-color="#060606"/></radialGradient>
   <radialGradient id="gw" cx="45%" cy="25%" r="72%"><stop offset="0%" stop-color="#fffef6"/><stop offset="75%" stop-color="#f0e8d4"/><stop offset="100%" stop-color="#e4dac0"/></radialGradient>
@@ -8,20 +8,21 @@
 <g>
   <animateTransform attributeName="transform" type="translate"
     values="
-      -20,50;   1220,50;
-      1220,170; -20,170;
-      -20,290;  1220,290;
-      1220,410; -20,410;
-      -20,50;   1220,50
+      -20,80;    1220,80;
+      1220,480;  -20,480;
+      -20,880;   1220,880;
+      1220,1280; -20,1280;
+      -20,1680;  1220,1680;
+      1220,80;   -20,80
     "
-    keyTimes="0;0.111;0.222;0.333;0.444;0.556;0.667;0.778;0.889;1"
-    dur="30s" repeatCount="indefinite" calcMode="spline"
-    keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
+    keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;0.95;1"
+    dur="40s" repeatCount="indefinite" calcMode="spline"
+    keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
   <g>
     <animateTransform attributeName="transform" type="scale"
-      values="1,1;-1,1;-1,1;1,1;1,1;-1,1;-1,1;1,1;1,1;-1,1"
-      keyTimes="0;0.111;0.222;0.333;0.444;0.556;0.667;0.778;0.889;1"
-      dur="30s" repeatCount="indefinite" calcMode="discrete"/>
+      values="1,1;-1,1;-1,1;1,1;1,1;-1,1;-1,1;1,1;1,1;-1,1;-1,1;1,1"
+      keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;0.95;1"
+      dur="40s" repeatCount="indefinite" calcMode="discrete"/>
     <g>
       <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="0.38s" repeatCount="indefinite"/>
       <ellipse cx="-7" cy="1" rx="7" ry="2.5" fill="#F4A020">
